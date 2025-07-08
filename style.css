@@ -439,7 +439,114 @@ body {
   color: #bbb;
 }
 
-/* Responsive Navbar & Layout */
+
+
+/* ------------------- Responsive Styles ------------------- */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+  }
+
+  .hero-right img {
+    max-width: 100%;
+  }
+
+  .about-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .skills-grid, .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .about-details p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #fff;
+    display: none;
+    padding: 1rem 0;
+    z-index: 10;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p,
+  .about-details p {
+    font-size: 0.9rem;
+  }
+
+  .skills-grid, .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .about-details p,
+  .interests span {
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
+/* Re
+
 @media (max-width: 991px) {
   .hero {
     flex-direction: column;
@@ -529,3 +636,4 @@ body {
     width: 100%;
   }
 }
+  
